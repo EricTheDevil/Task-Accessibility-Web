@@ -1,227 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Home</title>
-		<link rel="icon" type="image/x-icon" href="assets/images/img-1.jpg" />
-	</head>
-	<body>
-		<header>
-			<!-- logo -->
-			<img
-				src="assets/images/img-1.jpg"
-				alt="The logo of the company"
-				title="logo"
-				height="100"
-				width="100"
-			/>
-			<!-- the nav-->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="blogs.html">Blogs</a></li>
-					<li><a href="single-blog.html">Single-blog</a></li>
-				</ul>
-			</nav>
-		</header>
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/img-1.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- the nav-->
+      <nav class="nav">
+        <!-- logo -->
+        <img
+          src="assets/images/img-1.jpg"
+          alt="The logo of the company"
+          title="logo"
+          class="nav__logo"
+        />
 
-		<!-- content -->
-		<main>
-			<!-- first page -->
-			<section>
-				<article>
-					<header> 
-						<h1>Summary</h1>	
-					</header>				
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
-							eleifend lectus, sit amet dictum quam. Quisque tempus orci vitae
-							convallis consequat. Fusce et orci eget orci porta semper non et
-							nisi.
-						</p>
-					<figure>
-						<img
-							src="assets/images/header.svg"
-							alt="Book cover"
-							title="Nerses, Name of the book"
-							height="100"
-							width="100"
-						/>
-						<figcaption>Fig.1 - Nerses.</figcaption>
-					</figure>
-				</article>
-			</section>
-			<hr />
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="single-blog.html">Single-blog</a></li>
+        </ul>
+      </nav>
+    </header>
 
-			<!-- second page -->
-			<section>
-				<h2>Book 1</h2>
-				<!-- Cards from the 2nd page -->
-				<article>
-					<header>
-						<h3>Chapter 1</h3>
-					</header>
-					<p>
-						Nunc vestibulum libero quis risus tincidunt venenatis. Morbi blandit
-						interdum consequat. Aliquam elit ipsum, bibendum ut imperdiet ac,
-						tempus eu arcu. In lobortis congue turpis.
-					</p>
-					<img
-						src="assets/images/img-1.jpg"
-						alt="Henricus Nerses"
-						title="Henricus Nerses, Image of main character"
-						height="100"
-						width="100"
-					/>
-				</article>
+    <!-- content -->
+    <main>
+      <!-- first page -->
+      <section>
+        <article class="landing">
+          <div class="landing__anim"></div>
+          <div class="landing__left">
+            <header>
+              <h1>Summary</h1>
+            </header>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
+              eleifend lectus, sit amet dictum quam. Quisque tempus orci vitae
+              convallis consequat. Fusce et orci eget orci porta semper non et
+              nisi.
+            </p>
+          </div>
+          <figure class="landing__right">
+            <img
+              src="assets/images/header.svg"
+              alt="Book cover"
+              title="Nerses, Name of the book"
+              class="landing__right__image"
+            />
+            <figcaption>Fig.1 - Nerses.</figcaption>
+          </figure>
+        </article>
+      </section>
+      <hr />
 
-				<article>
-					<header>
-						<h3>Chapter 2</h3>
-					</header>
-					<p>
-						Phasellus accumsan enim vitae arcu tincidunt suscipit. Nullam sed
-						volutpat felis, vel hendrerit odio. Aliquam ultricies lacus sit amet
-						imperdiet interdum.
-					</p>
-					<img
-						src="assets/images/img-2.jpg"
-						alt="Sharon Virginia"
-						title="Sharon Virginia, Image of character"
-						height="100"
-						width="100"
-					/>
-				</article>
+      <!-- second page -->
+      <section class="cards">
+        <h2 class="cards__title">Book 1</h2>
+        <!-- Cards from the 2nd page -->
+        <div class="cards__container">
+          <article class="cards__container__card">
+            <header class="cards__container__card__title">
+              <h3>Chapter 1</h3>
+            </header>
+            <p class="cards__container__card__content">
+              Nunc vestibulum libero quis risus tincidunt venenatis. Morbi
+              blandit interdum consequat. Aliquam elit ipsum, bibendum ut
+              imperdiet ac, tempus eu arcu. In lobortis congue turpis.
+            </p>
+            <img
+              src="assets/images/img-1.jpg"
+              alt="Henricus Nerses"
+              title="Henricus Nerses, Image of main character"
+              class="cards__container__card__image"
+            />
+          </article>
+          <article class="cards__container__card">
+            <header class="cards__container__card__title">
+              <h3>Chapter 2</h3>
+            </header>
+            <p class="cards__container__card__content">
+              Phasellus accumsan enim vitae arcu tincidunt suscipit. Nullam sed
+              volutpat felis, vel hendrerit odio. Aliquam ultricies lacus sit
+              amet imperdiet interdum.
+            </p>
+            <img
+              src="assets/images/img-2.jpg"
+              alt="Sharon Virginia"
+              title="Sharon Virginia, Image of character"
+              class="cards__container__card__image"
+            />
+          </article>
+          <article class="cards__container__card">
+            <header class="cards__container__card__title">
+              <h3>Chapter 3</h3>
+            </header>
+            <p>
+              Sed vehicula mauris eu tortor suscipit blandit. Fusce tincidunt
+              vitae tortor mattis luctus. Nam finibus vel tellus eu tincidunt.
+              Curabitur tristique justo lorem, ut mollis magna semper sed.
+              Curabitur consectetur maximus velit ac hendrerit.
+            </p>
+            <img
+              src="assets/images/img-3.jpg"
+              alt="Death of Sharon Virginia"
+              title="Death of Sharon Virginia, Image of grave"
+              class="cards__container__card__image"
+            />
+          </article>
+        </div>
+      </section>
+      <hr />
 
-				<article>
-					<header>
-						<h3>Chapter 3</h3>
-					</header>
-					<p>
-						Sed vehicula mauris eu tortor suscipit blandit. Fusce tincidunt
-						vitae tortor mattis luctus. Nam finibus vel tellus eu tincidunt.
-						Curabitur tristique justo lorem, ut mollis magna semper sed.
-						Curabitur consectetur maximus velit ac hendrerit.
-					</p>
-					<img
-						src="assets/images/img-3.jpg"
-						alt="Death of Sharon Virginia"
-						title="Death of Sharon Virginia, Image of grave"
-						height="100"
-						width="100"
-					/>
-				</article>
-			</section>
+      <!-- third page -->
+      <section class="carousel">
+        <h2 class="carousel__title">Book 1 Posters.</h2>
+        <!-- Image carousel with covers? -->
+        <div class="carousel__content">
+          <img
+            src="assets/images/img-1.jpg"
+            alt="first poster of book 1"
+            class="carousel__content__image"
+          />
+          <img
+            src="assets/images/img-2.jpg"
+            alt="second poster of book 2"
+            class="carousel__content__image"
+          />
+          <img
+            src="assets/images/img-3.jpg"
+            alt="third poster of book 3"
+            class="carousel__content__image"
+          />
+        </div>
+      </section>
+      <hr />
 
-			<!-- third page -->
-			<section>
-				<h2>Book 1 Posters.</h2>
-				<!-- Image carousel with covers? -->
-				<img
-					src="assets/images/img-1.jpg"
-					alt="first poster of book 1"
-					height="100"
-					width="100"
-				/>
-				<img
-					src="assets/images/img-2.jpg"
-					alt="second poster of book 2"
-					height="100"
-					width="100"
-				/>
-				<img
-					src="assets/images/img-3.jpg"
-					alt="third poster of book 3"
-					height="100"
-					width="100"
-				/>
-			</section>
+      <!-- fourth page -->
+      <section class="container">
+        <h2 class="container__title">Reviews</h2>
+        <div class="container__reviews">
+          <article class="container__reviews__article">
+            <img
+              src="assets/images/img-3.jpg"
+              alt="Portrait of Van Gogh"
+              title="Van Gogh, Self-portrait."
+              class="container__reviews__article__image"
+            />
+            <div class="container__reviews__article__content">
+              <header>
+                <h3>Review by Goodreads.</h3>
+              </header>
+              <p>
+                Donec auctor dolor quam, sollicitudin aliquet leo ornare sit
+                amet. Nulla in velit ipsum. Mauris erat elit, sodales id risus
+                in, suscipit egestas tellus. Suspendisse potenti. Phasellus
+                pharetra scelerisque volutpat. In ut nibh ex.
+              </p>
+              <footer>Van Gogh</footer>
+            </div>
+          </article>
+          <article class="container__reviews__article">
+            <img
+              src="assets/images/img-1.jpg"
+              alt="Portrait of Nil Deasún"
+              title="Nil Deasún, Self-portrait."
+              class="container__reviews__article__image"
+            />
 
-			<!-- fourth page -->
-			<section>
-				<h2>Reviews</h2>
-				<article>
-					<header>
-						<h3>Review by Goodreads.</h3>
-					</header>
-					<img
-						src="assets/images/img-3.jpg"
-						alt="Portrait of Van Gogh"
-						title="Van Gogh, Self-portrait."
-						height="100"
-						width="100"
-					/>
-					<p>
-						Donec auctor dolor quam, sollicitudin aliquet leo ornare sit amet.
-						Nulla in velit ipsum. Mauris erat elit, sodales id risus in,
-						suscipit egestas tellus. Suspendisse potenti. Phasellus pharetra
-						scelerisque volutpat. In ut nibh ex.
-					</p>
-					<footer>Van Gogh</footer>
-				</article>
+            <div class="container__reviews__article__content">
+              <header>
+                <h3>Review by Book Riot.</h3>
+              </header>
+              <p>
+                Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
+                malesuada sed, condimentum sit amet velit. Praesent risus ex,
+                fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse
+                ex tellus, tempus a vestibulum ut, laoreet eu diam.
+              </p>
+              <footer>Nil Deasún</footer>
+            </div>
+          </article>
+        </div>
+      </section>
+      <hr />
 
-				<article>
-					<header>
-						<h3>Review by Book Riot.</h3>
-					</header>
-					<img
-						src="assets/images/img-1.jpg"
-						alt="Portrait of Nil Deasún"
-						title="Nil Deasún, Self-portrait."
-						height="100"
-						width="100"
-					/>
-					<p>
-						Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
-						malesuada sed, condimentum sit amet velit. Praesent risus ex,
-						fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse ex
-						tellus, tempus a vestibulum ut, laoreet eu diam.
-					</p>
-					<footer>Nil Deasún</footer>
-				</article>
-			</section>
-
-			<!-- fifth page -->
-			<section>
-				<h2>Contact Us</h2>
-				<form action="#">
-					<label for="input_name" aria-labelledby="input_name"> Name: </label>
-					<input
-						type="text"
-						id="input_name"
-						name="input_name"
-						placeholder="name"
-					/>
-					<label for="input_email" aria-labelledby="input_email"> Email: </label>
-					<input
-						type="text"
-						id="input_email"
-						name="input_email"
-						placeholder="email"
-					/>
-					<label for="input_message" aria-labelledby="input_message">
-						Message:
-					</label>
-					<textarea name="input_message" id="input_message"></textarea>
-					<input type="submit" value="Submit" />
-				</form>
-			</section>
-		</main>
-		<!-- End of content -->
-		<footer>
-			<p>© 1337</p>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/">Linkedin</a>
-				</li>
-				<li>
-					<a href="https://www.github.com/">Github</a>
-				</li>
-			</ul>
-		</footer>
-	</body>
+      <!-- fifth page -->
+      <section class="contact">
+        <h2 class="contact__title">Contact Us</h2>
+        <form action="#" class="contact__form">
+          <label for="input_name" aria-labelledby="input_name"> Name: </label>
+          <input
+            type="text"
+            id="input_name"
+            name="input_name"
+            placeholder="name"
+          />
+          <label for="input_email" aria-labelledby="input_email">
+            Email:
+          </label>
+          <input
+            type="text"
+            id="input_email"
+            name="input_email"
+            placeholder="email"
+          />
+          <label for="input_message" aria-labelledby="input_message">
+            Message:
+          </label>
+          <textarea name="input_message" id="input_message"></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <!-- End of content -->
+    <footer class="footer">
+      <p>© 1337</p>
+      <ul class="footer__icons">
+        <li>
+          <a href="https://www.linkedin.com/">Linkedin</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/">Github</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

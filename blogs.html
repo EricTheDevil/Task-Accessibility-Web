@@ -1,89 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Blogs</title>
-		<link rel="icon" type="image/x-icon" href="assets/images/img-2.jpg" />
-	</head>
-	<body>
-		<header>
-			<!-- logo -->
-			<img
-				src="assets/images/img-1.jpg"
-				alt="The logo of the company"
-				title="logo"
-				height="100"
-				width="100"
-			/>
-			<!-- the nav-->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="blogs.html">Blogs</a></li>
-					<li><a href="single-blog.html">Single-blog</a></li>
-				</ul>
-			</nav>
-		</header>
+    <title>Blogs</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/img-2.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- the nav-->
+      <nav class="nav">
+        <!-- logo -->
+        <img
+          src="assets/images/img-1.jpg"
+          alt="The logo of the company"
+          title="logo"
+          class="nav__logo"
+        />
 
-		<!-- content -->
-		<main>
-			<section>
-				<header>
-					<h1>News </h1>
-				</header>
-				<article>
-					<header>
-						<h2>Technology news.</h2>
-					</header>
-					<p>
-						Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
-						malesuada sed, condimentum sit amet velit. Praesent risus ex,
-						fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse ex
-						tellus, tempus a vestibulum ut, laoreet eu diam.
-					</p>
-					<footer>11/11/11, John Johnson</footer>
-				</article>
-				<article>
-					<header>
-						<h2>Financial news.</h2>
-					</header>
-					<p>
-						Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
-						malesuada sed, condimentum sit amet velit. Praesent risus ex,
-						fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse ex
-						tellus, tempus a vestibulum ut, laoreet eu diam.
-					</p>
-					<footer>12/11/11, Johnson Son</footer>
-				</article>
-				<article>
-					<header>
-						<h2>Political news.</h2>
-					</header>
-					<p>
-						Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
-						malesuada sed, condimentum sit amet velit. Praesent risus ex,
-						fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse ex
-						tellus, tempus a vestibulum ut, laoreet eu diam.
-					</p>
-					<footer>12/11/11, Son John</footer>
-				</article>
-			</section>
-		</main>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="single-blog.html">Single-blog</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<footer>
-			<p>© 1337</p>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/">Linkedin</a>
-				</li>
-				<li>
-					<a href="https://www.github.com/">Github</a>
-				</li>
-			</ul>
-		</footer>
-	</body>
+    <!-- the search bar-->
+    <div class="search">
+      <div class="search__anim"></div>
+      <form>
+        <label for="search" aria-labelledby="search"> Search :</label>
+        <input type="search" id="search" name="search" />
+        <input type="submit" value="Search" class="search__send" />
+      </form>
+    </div>
+    <hr />
+
+    <!-- content -->
+    <main>
+      <section class="news">
+        <header>
+          <h1>News</h1>
+        </header>
+        <article class="news__article">
+          <header class="news__article__header">
+            <h2>Technology news.</h2>
+          </header>
+          <div class="news__article__content">
+            <p>
+              Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
+              malesuada sed, condimentum sit amet velit. Praesent risus ex,
+              fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse
+              ex tellus, tempus a vestibulum ut, laoreet eu diam.
+            </p>
+            <footer>11/11/11, John Johnson</footer>
+          </div>
+        </article>
+        <article class="news__article">
+          <header class="news__article__header">
+            <h2>Financial news.</h2>
+          </header>
+          <div class="news__article__content">
+            <p>
+              Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
+              malesuada sed, condimentum sit amet velit. Praesent risus ex,
+              fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse
+              ex tellus, tempus a vestibulum ut, laoreet eu diam.
+            </p>
+            <footer>12/11/11, Johnson Son</footer>
+          </div>
+        </article>
+        <article class="news__article">
+          <header class="news__article__header">
+            <h2>Political news.</h2>
+          </header>
+          <div class="news__article__content">
+            <p>
+              Nam sagittis convallis ultrices. Proin lacus orci, volutpat nec
+              malesuada sed, condimentum sit amet velit. Praesent risus ex,
+              fringilla vitae sollicitudin et, consectetur ac leo. Suspendisse
+              ex tellus, tempus a vestibulum ut, laoreet eu diam.
+            </p>
+            <footer>12/11/11, Son John</footer>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 1337</p>
+      <ul class="footer__icons">
+        <li>
+          <a href="https://www.linkedin.com/">Linkedin</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/">Github</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>

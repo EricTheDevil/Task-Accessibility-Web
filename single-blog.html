@@ -1,87 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>Single-blog</title>
-		<link rel="icon" type="image/x-icon" href="assets/images/img-3.jpg" />
-	</head>
-	<body>
-		<header>
-			<!-- logo -->
-			<img
-				src="assets/images/img-1.jpg"
-				alt="The logo of the company"
-				title="logo"
-				height="100"
-				width="100"
-			/>
-			<!-- the nav-->
-			<nav>
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="blogs.html">Blogs</a></li>
-					<li><a href="single-blog.html">Single-blog</a></li>
-				</ul>
-			</nav>
-		</header>
+    <title>Single-blog</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/img-3.jpg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- the nav-->
+      <nav class="nav">
+        <!-- logo -->
+        <img
+          src="assets/images/img-1.jpg"
+          alt="The logo of the company"
+          title="logo"
+          class="nav__logo"
+        />
 
-		<!-- the search bar-->
-		<form>
-			<label for="search" aria-labelledby="search"> Search :</label>
-			<input type="search" id="search" name="search" />
-			<input type="submit" value="Search" />
-		</form>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blogs.html">Blogs</a></li>
+          <li><a href="single-blog.html">Single-blog</a></li>
+        </ul>
+      </nav>
+    </header>
 
-		<!-- content -->
-		<main>
-			<article>
-				<header>
-					<h1>Breaking News</h1>
-				</header>
-				<figure>
-					<img
-						src="assets/images/header.svg"
-						alt="Photo of the accident"
-						height="100"
-						width="100"
-					/>
-					<figcaption>11/11/11, Taken by Van Gogh Junior</figcaption>
-				</figure>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
-					eleifend lectus, sit amet dictum quam. Quisque tempus orci vitae
-					convallis consequat. Fusce et orci eget orci porta semper non et nisi.
-				</p>
-				<!-- Additional info -->
-				<aside>
-					<p>
-						.isin te non repmes atrop icro tege icro te ecsuF .tauqesnoc
-						sillavnoc eativ icro supmet euqsiuQ .mauq mutcid tema tis ,sutcel
-						dnefiele a sarC .tile gnicsipida rutetcesnoc ,tema tis rolod muspi
-						meroL
-					</p>
-				</aside>
+    <!-- content -->
+    <main>
+      <header class="newstitle">
+        <h1 class="newstitle__title">Breaking News</h1>
+        <div class="newstitle__line"></div>
+      </header>
+      <article class="biography">
+        <img
+          src="assets/images/header.svg"
+          alt="Photo of the accident"
+          class="biography__image"
+        />
+        <div class="biography__content">
+          <div class="biography__content__desc">
+            <div class="biography__content__desc__box"></div>
+            <header class="biography__titleholder">
+              <h2 class="biography__titleholder__title">Summary</h2>
+            </header>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras a
+              eleifend lectus, sit amet dictum quam. Quisque tempus orci vitae
+              convallis consequat. Fusce et orci eget orci porta semper non et
+              nisi.
+            </p>
+            <footer>
+              <p>11/11/11, SOURCE: Van Gogh</p>
+            </footer>
+          </div>
+          <!-- Additional info -->
+          <aside class="biography__content__aside">
+            <p>
+              .isin te non repmes atrop icro tege icro te ecsuF .tauqesnoc
+              sillavnoc eativ icro supmet euqsiuQ .mauq mutcid tema tis ,sutcel
+              dnefiele a sarC .tile gnicsipida rutetcesnoc ,tema tis rolod muspi
+              meroL
+            </p>
+          </aside>
+        </div>
+      </article>
+    </main>
 
-				<footer>
-					<p>11/11/11, SOURCE: Van Gogh</p>
-				</footer>
-			</article>
-		</main>
-
-		<footer>
-			<p>© 1337</p>
-			<ul>
-				<li>
-					<a href="https://www.linkedin.com/">Linkedin</a>
-				</li>
-				<li>
-					<a href="https://www.github.com/">Github</a>
-				</li>
-			</ul>
-		</footer>
-	</body>
+    <footer class="footer">
+      <p>© 1337</p>
+      <ul class="footer__icons">
+        <li>
+          <a href="https://www.linkedin.com/">Linkedin</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/">Github</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
 </html>
